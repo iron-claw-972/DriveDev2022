@@ -28,8 +28,7 @@ public class TankDrive extends CommandBase {
   @Override
   public void execute() {
     m_drive.tankDrive(
-      RobotContainer.getMotorSpeed(DriveConstants.kLeftJoyAxis), 
-      RobotContainer.getMotorSpeed(DriveConstants.kRightJoyAxis));
+      RobotContainer.getRawAxis(DriveConstants.kLeftJoyAxis), 
+      RobotContainer.getRawAxis(DriveConstants.kRightJoyAxis));
     }
-  
 }
