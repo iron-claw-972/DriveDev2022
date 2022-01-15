@@ -31,7 +31,7 @@ public class RobotContainer {
     m_robotDrive);
 
   // The driver's controller
-  static Joystick controller = new Joystick(DriveConstants.kControllerPort);
+  static Joystick controller = new Joystick(ControllerConstants.kDriverPort);
 
   /**
    * The container for the robot.  Contains subsystems, OI devices, and commands.
@@ -59,7 +59,7 @@ public class RobotContainer {
     
   }
 
-  public static double getRawAxis(int port) {
+  public static double getRawControllerAxis(int port) {
     // get a joystick axis
     return controller.getRawAxis(port);
   }

@@ -18,23 +18,36 @@ package frc.robot;
 public final class Constants {
   public static final class DriveConstants {
     //TODO: 1. Set this to the motor ports
-    public static final int kLeftMotor1Port =4;
-    public static final int kDoorMotorPort = 1;
-    public static final int kRightMotor1Port = 2;
-    public static final int kIntakeMotorPort = 3;
-
-    //make sure your controller is 0
-    public static final int kControllerPort = 0;
-
-    //TODO: 1. Set the joystick axis
-    public static final int kLeftJoyAxis = 4;
-    public static final int kRightJoyAxis = 1;
+    public static final int kLeftMotor1Port =1;
+    public static final int kRightMotor1Port = 0;
+    
   }
-  public static final class ButtonConstants{
-      public static final int kA = 1;
-      public static final int kB = 2;
-      public static final int kX = 3;
-      public static final int kBL = 5;
-      public static final int kBR = 6;
+  public static final class ControllerConstants {
+    public static final int kDriverPort = 0;
+    public static final int kOperatorPort = 1;
+
+    //joystick axis
+    public static final int kLeftXJoyAxis = 0;
+    public static final int kLeftYJoyAxis = 1;
+    public static final int kRightXJoyAxis = 4;
+    public static final int kRightYJoyAxis = 5;
+
+    //triggers
+    public static final int kLeftTrigger = 2;
+    public static final int kRightTrigger = 3;
+    
+    //buttons
+    public static final int kA = 1;
+    public static final int kB = 2;
+    public static final int kX = 3;
+    public static final int kY = 4;
+    public static final int kLeftBumper = 5;
+    public static final int kRightBumper = 6;
+
+    //D-pad
+    // public static final int kUp = 1;
+    // public static final int kDown = 1;
+    // public static final int kLeft = 1;
+    // public static final int kRight = 1;
   }
 }

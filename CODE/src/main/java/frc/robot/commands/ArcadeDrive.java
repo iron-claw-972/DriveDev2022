@@ -10,7 +10,7 @@ package frc.robot.commands;
 import edu.wpi.first.wpilibj2.command.CommandBase;
 import frc.robot.subsystems.DriveSubsystem;
 import frc.robot.RobotContainer;
-import frc.robot.Constants.DriveConstants;
+import frc.robot.Constants.*;
 
 public class ArcadeDrive extends CommandBase {
   private final DriveSubsystem m_drive;
@@ -27,8 +27,11 @@ public class ArcadeDrive extends CommandBase {
 
   @Override
   public void execute() {
+    double exponent = 1;
+
     m_drive.arcadeDrive(
-      -RobotContainer.getRawAxis(DriveConstants.kLeftJoyAxis), 
-      RobotContainer.getRawAxis(DriveConstants.kRightJoyAxis));
+      m_drive.expoKS(RobotContainer.getRawControllerAxis(ControllerConstants.kLeftYJoyAxis),1), 
+      m_drive.expoKS(RobotContainer.getRawControllerAxis(ControllerConstants.kRightXJoyAxis),1)
+    );
   }
 }
