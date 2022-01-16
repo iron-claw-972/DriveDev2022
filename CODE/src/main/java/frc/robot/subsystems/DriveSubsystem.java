@@ -63,11 +63,8 @@ public class DriveSubsystem extends SubsystemBase {
    */
 
   public void arcadeDrive(double throttle, double turn) {
-    throttle = -throttle;
-    turn *= 0.7;
-    leftMotor1.set(ControlMode.PercentOutput,  -(throttle + turn));
-    rightMotor1.set(ControlMode.PercentOutput, (throttle - turn) * 0.75);
-  }
+    leftMotor1.set(ControlMode.PercentOutput, throttle + turn);
+    rightMotor1.set(ControlMode.PercentOutput, throttle - turn);  }
 
     
   public void modArcadeDrive1(double throttle, double turn) {

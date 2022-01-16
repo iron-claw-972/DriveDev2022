@@ -19,7 +19,7 @@ public final class Constants {
   public static final class DriveConstants {
     //TODO: 1. Set this to the motor ports
     public static final int kLeftMotor1Port =1;
-    public static final int kRightMotor1Port = 2;
+    public static final int kRightMotor1Port = 0;
     
   }
   public static final class ControllerConstants {
